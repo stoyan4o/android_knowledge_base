@@ -16,9 +16,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".MultipleColumnsGridActivity" />
-        <activity android:name=".PopupActicity" android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
+        <activity
+            android:name=".PopupActicity"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".TouchActivity"></activity>
     </application>
 
 </manifest>
