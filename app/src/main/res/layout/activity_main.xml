@@ -11,7 +11,7 @@ tools:context="bg.examples.my.androidexamples.MainActivity">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="Back"
+        android:text="@string/btn_back"
         android:id="@+id/buttonBack"
         android:layout_row="0"
         android:layout_column="0" />

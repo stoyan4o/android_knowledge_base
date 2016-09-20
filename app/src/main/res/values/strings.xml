@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidExamples</string>
+    <string name="btn_back">defaultBack</string>
 </resources>

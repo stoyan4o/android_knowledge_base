@@ -18,8 +18,10 @@
         <activity android:name=".MultipleColumnsGridActivity" />
         <activity
             android:name=".PopupActicity"
-            android:theme="@style/AppTheme.CustomTheme"></activity>
-        <activity android:name=".TouchActivity"></activity>
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".TouchActivity" />
+        <activity android:name=".LocalizedActivity" />
+        <activity android:name=".RoundedButtons"></activity>
     </application>
 
 </manifest>
