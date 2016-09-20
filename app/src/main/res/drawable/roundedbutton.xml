@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <stroke android:width="0dp" android:color="#da1010" />
+    <stroke android:width="0dp" android:color="#da1010" /> <!-- border around the recrangle-->
     <corners android:radius="8dp" />
-    <gradient android:startColor="#165256"  android:endColor="#2ad6de" android:angle="90" android:type="linear" />
+    <!-- startColor is upper part;  endColor is lower part -->
+    <gradient android:startColor="#d4e209"
+        android:endColor="#0d1ed9"
+        android:angle="90"
+        android:type="linear" />
 </shape>

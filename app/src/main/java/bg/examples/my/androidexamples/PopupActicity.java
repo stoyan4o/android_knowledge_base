@@ -19,4 +19,18 @@ public class PopupActicity extends AppCompatActivity {
 
         getWindow().setLayout((int)(width*0.8), (int)(height*0.6));
     }
+
+    /*
+    To open this activity call it from
+
+    btnPop = (Button)findViewById(R.id.buttonPop);
+
+        btnPop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PopupActicity.class));
+            }
+        });
+
+     */
 }
