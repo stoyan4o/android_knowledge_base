@@ -21,7 +21,8 @@
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".TouchActivity" />
         <activity android:name=".LocalizedActivity" />
-        <activity android:name=".RoundedButtons"></activity>
+        <activity android:name=".RoundedButtons" />
+        <activity android:name=".StartActivityAndGetResult"></activity>
     </application>
 
 </manifest>

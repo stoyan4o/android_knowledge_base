@@ -1,5 +1,14 @@
 package bg.examples.my.androidexamples;
+/*
+This activity demostrates how to start single activity with different localization resources.
+On the onCreateMethod the activity must call updateConfiguration before calling setContentView(...)
 
+Localized String should be placed in values/strings.xml
+english files should be in values-en folder,
+bulgarian files should be in values-bg folder
+
+values folder holds the default localization strings.
+ */
 import android.content.Context;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
@@ -24,7 +33,6 @@ public class LocalizedActivity extends AppCompatActivity {
         android.content.res.Configuration conf = res.getConfiguration();
         conf.locale = new Locale(language_code.toLowerCase());
         res.updateConfiguration(conf, dm);
-
 
         setContentView(R.layout.activity_localized);
     }
