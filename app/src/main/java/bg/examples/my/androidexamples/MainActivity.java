@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
         res.updateConfiguration(conf, dm);
 
         setContentView(R.layout.activity_main);
-
-        btnPop = (Button)findViewById(R.id.buttonPop);
+        // Popup Activity
+        btnPop = (Button)findViewById(R.id.MainMenu_buttonPop);
 
         btnPop.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,12 +48,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, PopupActicity.class));
             }
         });
-        btnTOuchDemo = (Button)findViewById(R.id.btnTouchDemo);
+
+        // Touch
+        btnTOuchDemo = (Button)findViewById(R.id.MainMenu_btnTouchDemo);
 
         btnTOuchDemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TouchActivity.class));
+            }
+        });
+
+        // Load From Assets
+        findViewById(R.id.MainMenu_btnLoadFromAssets).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoadFromAssetsActivity.class));
             }
         });
     }
