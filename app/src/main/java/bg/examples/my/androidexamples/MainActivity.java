@@ -1,4 +1,7 @@
 package bg.examples.my.androidexamples;
+/*
+
+ */
 
 import android.content.Context;
 import android.content.Intent;
