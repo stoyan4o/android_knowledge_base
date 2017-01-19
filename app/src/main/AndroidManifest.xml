@@ -23,7 +23,8 @@
         <activity android:name=".LocalizedActivity" />
         <activity android:name=".RoundedButtons" />
         <activity android:name=".StartActivityAndGetResult" />
-        <activity android:name=".LoadFromAssetsActivity"></activity>
+        <activity android:name=".LoadFromAssetsActivity" />
+        <activity android:name=".StartActivityAndGetResultChild"></activity>
     </application>
 
 </manifest>
