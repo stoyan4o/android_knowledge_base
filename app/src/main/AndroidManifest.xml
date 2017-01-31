@@ -24,7 +24,11 @@
         <activity android:name=".RoundedButtons" />
         <activity android:name=".StartActivityAndGetResult" />
         <activity android:name=".LoadFromAssetsActivity" />
-        <activity android:name=".StartActivityAndGetResultChild"></activity>
+        <activity android:name=".StartActivityAndGetResultChild" />
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

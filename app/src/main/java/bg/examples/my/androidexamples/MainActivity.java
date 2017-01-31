@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnPop;
     Button btnTOuchDemo;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         // Popup Activity
-        btnPop = (Button)findViewById(R.id.MainMenu_buttonPop);
+        btnPop = (Button) findViewById(R.id.MainMenu_buttonPop);
 
         btnPop.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Touch
-        btnTOuchDemo = (Button)findViewById(R.id.MainMenu_btnTouchDemo);
+        btnTOuchDemo = (Button) findViewById(R.id.MainMenu_btnTouchDemo);
 
         btnTOuchDemo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, LoadFromAssetsActivity.class));
+            }
+        });
+
+        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TestActivity.class));
             }
         });
     }

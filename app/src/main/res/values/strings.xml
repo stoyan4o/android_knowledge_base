@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidExamples</string>
     <string name="btn_back">defaultBack</string>
+    <string name="title_activity_test">TestActivity</string>
 </resources>
