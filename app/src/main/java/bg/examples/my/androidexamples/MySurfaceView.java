@@ -14,6 +14,8 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 /**
  * Created by user on 1/31/2017.
+ Second approach can be found here:
+ http://stackoverflow.com/questions/11192757/android-rotate-bitmap-around-center-without-resizing
  */
 
 public class MySurfaceView extends SurfaceView implements
