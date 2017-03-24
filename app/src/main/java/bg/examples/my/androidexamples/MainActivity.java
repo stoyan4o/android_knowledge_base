@@ -74,6 +74,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, TestActivity.class));
             }
         });
+
+        //
+        findViewById(R.id.btnLoadSaveFromFile).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoadSaveFile.class));
+            }
+        });
     }
 
 

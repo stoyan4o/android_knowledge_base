@@ -51,8 +51,8 @@ public class MySurfaceView extends SurfaceView implements
         getHolder().addCallback(this);
         setFocusable(true);
 
-        bmpFanatic = BitmapFactory.decodeResource(getResources(),R.drawable.photo);
-        mImage = BitmapFactory.decodeResource(getResources(),R.drawable.photo);
+        bmpFanatic = BitmapFactory.decodeResource(getResources(),R.drawable.photo_round);
+        mImage = BitmapFactory.decodeResource(getResources(),R.drawable.photo_round);
 
         paint.setColor(Color.BLUE);
         paint.setStrokeWidth(1);
@@ -72,18 +72,25 @@ public class MySurfaceView extends SurfaceView implements
         drawThread.setRunning(false);
         drawThread.stop();
     }
-    public static Bitmap RotateBitmap(Bitmap source, float angle)
+
+    public Bitmap RotateBitmap2(Bitmap source, float angle)
     {
         Matrix matrix = new Matrix();
-        matrix.postRotate(angle);
+        matrix.postRotate(angle, 50,50);
         return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(), matrix, true);
     }
+
     public void update() {
         location.x = location.x + 10;
         if(location.x > getWidth()) {
             location.x = 0;
         }
-        // bmpFanatic = RotateBitmap(bmpFanatic, 1);
+        // bmpFanatic = RotateBitmap2(bmpFanatic, 1);
+
+        Matrix matrix = new Matrix();
+        matrix.postRotate(1, 50,50);
+        bmpFanatic = Bitmap.createBitmap(bmpFanatic, 0, 0, bmpFanatic.getWidth(), bmpFanatic.getHeight(), matrix, true);
+
         iDegree++;
         if (iDegree > 360)
             iDegree = 1;
@@ -111,7 +118,8 @@ public class MySurfaceView extends SurfaceView implements
         canvas.drawCircle(location.x, location.y, 15, paint);
 
         canvas.drawBitmap(bmpFanatic,0,0, paint);
-        renderImage(canvas);
+
+        // renderImage(canvas);
     }
 
     class DrawThread extends Thread {
