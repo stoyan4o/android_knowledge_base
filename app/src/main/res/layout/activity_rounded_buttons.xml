@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,15 +11,17 @@
     tools:context="bg.examples.my.androidexamples.RoundedButtons">
 
     <Button
+        android:id="@+id/button3"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Gradient two colors"
-        android:id="@+id/button3"
-        android:background = "@color/selector_green_gradient"
-        android:textColor="@color/button_forecolor"
-        android:layout_marginTop="96dp"
         android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button_shape_green"
+        android:text="Gradient two colors"
+        android:textColor="@color/button_forecolor"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="200dp"
@@ -31,5 +34,44 @@
         android:elevation="0dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape_green_round_strong"
+        android:duplicateParentState="true"
+        android:elevation="0dp"
+        android:text="Button"
+        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button3"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_shape_green_round_strong"
+        android:foreground="@mipmap/ic_launcher"
+        android:foregroundGravity="left|center_vertical"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_below="@+id/button"
+        android:foregroundGravity="left|center_vertical"
+        android:foregroundTint="@drawable/button_shape_green_round_strong"
+        app:srcCompat="@drawable/button_shape_green" />
 
 </RelativeLayout>
