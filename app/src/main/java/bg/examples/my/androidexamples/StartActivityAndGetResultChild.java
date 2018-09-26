@@ -12,12 +12,15 @@ public class StartActivityAndGetResultChild extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_and_get_result_child);
+
         findViewById(R.id.startactivitygetresultchild_btnClose).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // This is the text to return to parent activity
                 String message = ((EditText)findViewById(R.id.editText)).getText().toString();
                 Intent intent = new Intent();
                 intent.putExtra("MESSAGE",message);
+
                 setResult(2, intent);
                 finish(); // finishing activity
             }

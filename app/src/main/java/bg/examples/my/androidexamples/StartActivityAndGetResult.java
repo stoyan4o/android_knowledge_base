@@ -34,10 +34,10 @@ public class StartActivityAndGetResult extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (resultCode == 2)
-        {
-            String sMsg = getIntent().getStringExtra("MESSAGE");
-
+        switch (resultCode) {
+            case 2:
+                String sMsg = getIntent().getStringExtra("MESSAGE");
+                break;
         }
     }
 }

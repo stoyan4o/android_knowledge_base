@@ -65,13 +65,13 @@ public class LoadSaveFile extends AppCompatActivity {
             return null;
         }
 
-        String ret = "";
+        String sResult = "";
         final File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/folderName/" );
 
         if (!dir.exists())
         {
             if(!dir.mkdirs()){
-                Log.e("ALERT","could not create the directories");
+                Log.e("ALERT","Could not create the directories");
             }
         }
         final File myFile = new File(dir, fileName + ".txt");
@@ -89,15 +89,14 @@ public class LoadSaveFile extends AppCompatActivity {
                 inputStreamReader.read(buffer);
 
                 inputStream.close();
-                ret = new String(buffer);
-                txtLoadedText.setText(ret);
-
+                sResult = new String(buffer);
+                // txtLoadedText.setText(sResult);
             }
         }catch (Exception e) {
             e.printStackTrace();
         }
 
-        return ret;
+        return sResult;
 
     }
 
