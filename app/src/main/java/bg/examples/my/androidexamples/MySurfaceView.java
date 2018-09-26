@@ -108,7 +108,7 @@ public class MySurfaceView extends SurfaceView implements
         if(!mRotate) {
             canvas.drawBitmap(mImage, drawRect, dest, null);
         } else {
-            canvas.save(Canvas.MATRIX_SAVE_FLAG); //Saving the canvas and later restoring it so only this image will be rotated.
+            canvas.save(); // Canvas.MATRIX_SAVE_FLAG //Saving the canvas and later restoring it so only this image will be rotated.
             canvas.rotate(iDegree,canvas.getWidth() / 2, canvas.getHeight()/ 2);
             canvas.drawBitmap(mImage, drawRect, dest, null);
             canvas.restore();
