@@ -40,15 +40,6 @@ public class MainActivity extends AppCompatActivity {
         res.updateConfiguration(conf, dm);
 
         setContentView(R.layout.activity_main);
-        // Popup Activity
-        btnPop = (Button) findViewById(R.id.MainMenu_buttonPop);
-
-        btnPop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, PopupActicity.class));
-            }
-        });
 
         // Touch
         btnTOuchDemo = (Button) findViewById(R.id.MainMenu_btnTouchDemo);
