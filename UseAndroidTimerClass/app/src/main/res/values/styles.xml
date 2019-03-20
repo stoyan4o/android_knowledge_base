@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/active_tab_color</item>
+    </style>
+
+    <color name="active_tab_color">#48bf8d</color>
 </resources>

@@ -59,18 +59,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TestActivity.class));
-            }
-        });
+
 
         //
         findViewById(R.id.btnLoadSaveFromFile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, LoadSaveFile.class));
+            }
+        });
+
+        // SelfCall
+        findViewById(R.id.btn_self_call).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SelfCallActivity.class));
+            }
+        });
+        //
+        findViewById(R.id.btn_scrollview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ScrollingMapActivity.class));
             }
         });
     }

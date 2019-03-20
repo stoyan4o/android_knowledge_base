@@ -8,13 +8,14 @@ tools:context="bg.examples.my.androidexamples.MainActivity">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <Button
+        android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="@string/btn_back"
-        android:id="@+id/buttonBack"
         android:layout_row="0"
-        android:layout_column="0" />
+        android:layout_column="0"
+        android:text="@string/btn_back" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,15 +50,16 @@ tools:context="bg.examples.my.androidexamples.MainActivity">
             android:layout_column="0"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_gravity="center_horizontal"/>
+
         <Button
+            android:id="@+id/btn_self_call"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/grid_button_height"
-            android:text="New Button 5"
-            android:id="@+id/button5"
             android:layout_row="3"
             android:layout_column="0"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_gravity="center_horizontal"/>
+            android:text="Self Call" />
 
         <Button
             android:id="@+id/btnLoadSaveFromFile"
@@ -68,15 +70,16 @@ tools:context="bg.examples.my.androidexamples.MainActivity">
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_row="4"
             android:text="Load Save File" />
+
         <Button
+            android:id="@+id/btn_scrollview"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/grid_button_height"
-            android:text="New Button 7"
-            android:id="@+id/button7"
             android:layout_row="5"
             android:layout_column="0"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_gravity="center_horizontal"/>
+            android:text="Scroll View" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="@dimen/grid_button_height"
