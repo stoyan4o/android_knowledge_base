@@ -80,15 +80,16 @@ tools:context="bg.examples.my.androidexamples.MainActivity">
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:text="Scroll View" />
+
         <Button
+            android:id="@+id/btn_show_more_text"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/grid_button_height"
-            android:text="New Button 8"
-            android:id="@+id/button8"
             android:layout_row="6"
             android:layout_column="0"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_gravity="center_horizontal"/>
+            android:text="Show more Text View" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="@dimen/grid_button_height"

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.borjabravo:readmoretextview:2.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/readmoretextview-2.0.1.aar/7b8560c60608ba7c15d74e5f0bb6ab18/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/readmoretextview-2.0.1.aar/7b8560c60608ba7c15d74e5f0bb6ab18/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.borjabravo/readmoretextview/2.0.1/637e593f0531146401d5693c4b53ab310fd518ee/readmoretextview-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
